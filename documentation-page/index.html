@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Doc</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <style>
+        #nav-header {
+            font-size: 27px;
+            font-weight: 900;
+            color: #1c3e3b;
+            text-align: center;
+            margin: 2px;
+            text-transform: uppercase;
+            background: #a19b9d;
+            border-radius: 2px;
+        }
+
+        #navbar {
+            background-color: #f4f4f4;
+            height: 96%;
+            top: 10px;
+            position: fixed;
+            width: 22%;
+        }
+
+        #nav-items {
+            margin: 30px;
+            line-height: 37px;
+            font-size: 21px;
+            font-weight: 600;
+        }
+
+        section header {
+            background: #ebe0e0;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .bd-callout-info {
+            border-left-color: #b11616;
+        }
+
+        .bd-callout {
+            padding: 1.25rem;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid #e9ecef;
+            border-left-width: .25rem;
+            border-radius: .25rem;
+        }
+
+        pre {
+            color: red;
+            background-color: #efefef;
+        }
+
+        code {
+            display: block;
+            text-align: left;
+            white-space: pre;
+            position: relative;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 2;
+            background-color: #f7f7f7;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        @media only screen and (max-width: 400px) {
+        #main-doc{
+            margin-left:-10px;
+        }
+        code{
+            margin-left:-20px;
+            width:100%;
+            padding:15px;
+            padding-left:10px;
+            padding-right:45px;
+            min-width:233px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl my-md-4 bd-layout">
+        <div class="row">
+            <div class="col-3">
+                <aside class="">
+                    <nav id="navbar" aria-label="Docs navigation">
+                        <header id="nav-header">Laravel</header>
+                        <ul class="nav flex-column nav-justified" id="nav-items">
+                            <li class="mb-2 nav-item">
+                                <a href="#Why_Laravel" class="nav-link rounded">Why Laravel</a>
+                            </li>
+                            <li class="mb-2 nav-item">
+                                <a href="#Laravel_Routing" class="nav-link rounded">Laravel Routing</a>
+                            </li>
+                            <li class="mb-2 nav-item">
+                                <a href="#Laravel_Middleware" class="nav-link rounded">Laravel Middleware</a>
+                            </li>
+                            <li class="mb-2 nav-item">
+                                <a href="#Laravel_Controllers" class="nav-link rounded">Laravel Controllers</a>
+                            </li>
+                            <li class="mb-2 nav-item">
+                                <a href="#Blade_Component" class="nav-link rounded">Blade Component</a>
+                            </li>
+                            <li class="mb-2 nav-item">
+                                <a href="#Views" class="nav-link rounded">Views</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+            <div class="col-9">
+                <main id="main-doc">
+                    <section class="main-section" id="Why_Laravel">
+                        <header>
+                            <h2>Why Laravel</h2>
+                        </header>
+                        <article class="text-start">
+                            <p>There are a variety of tools and frameworks available to you when building a web
+                                application. However, we believe Laravel is the best choice for building modern,
+                                full-stack web applications.</p>
+                            <h5><strong>#</strong>A Progressive Framework</h5>
+                            <p>
+
+                                We like to call Laravel a "progressive" framework. By that, we mean that Laravel grows
+                                with you. If you're just taking your first steps into web development, Laravel's vast
+                                library of documentation, guides, and video tutorials will help you learn the ropes
+                                without becoming overwhelmed.
+                            </p>
+
+                            <p>
+                                If you're a senior developer, Laravel gives you robust tools for dependency injection,
+                                unit testing, queues, real-time events, and more. Laravel is fine-tuned for building
+                                professional web applications and ready to handle enterprise work loads.
+                            </p>
+                            <h5><strong>#</strong>A Scalable Framework</h5>
+                            <p>
+                                Laravel is incredibly scalable. Thanks to the scaling-friendly nature of PHP and
+                                Laravel's built-in support for fast, distributed cache systems like Redis, horizontal
+                                scaling with Laravel is a breeze. In fact, Laravel applications have been easily scaled
+                                to handle hundreds of millions of requests per month.
+                            </p>
+
+                            <div class="bd-callout bd-callout-info">
+                                Note that we don’t provide utility classes for justified text. While, aesthetically,
+                                justified text might look more appealing, it does make word-spacing more random and
+                                therefore harder to read.
+                            </div>
+                            <h5><strong>#</strong>Installation</h5>
+                            <ul>
+                                <li>Your First Laravel Project</li>
+                                <li>Getting Started On macOS</li>
+                                <li>
+                                    Getting Started On Windows
+                                </li>
+                                <li>
+                                    Getting Started On Linux
+                                </li>
+                                <li>
+                                    Installation Via Composer
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="main-section" id="Laravel_Routing">
+                        <header>
+                            <h2>Laravel Routing</h2>
+                        </header>
+                        <article class="text-start">
+                            <h5>
+                                <strong>#</strong>Basic Routing
+                            </h5>
+                            <p>
+                                The most basic Laravel routes accept a URI and a closure, providing a very simple and
+                                expressive method of defining routes and behavior without complicated routing
+                                configuration files:
+                            </p>
+
+                            <code>
+                                use Illuminate\Support\Facades\Route;
+                                Route::get('/greeting', function () {
+                                    return 'Hello World';
+                                });
+                            </code>
+                            <h5><strong>#</strong>The Default Route Files</h5>
+                            <p>
+                                All Laravel routes are defined in your route files, which are located in the routes
+                                directory. These files are automatically loaded by your application's
+                                App\Providers\RouteServiceProvider. The routes/web.php file defines routes that are for
+                                your
+                                web interface. These routes are assigned the web middleware group, which provides
+                                features
+                                like session state and CSRF protection. The routes in routes/api.php are stateless and
+                                are
+                                assigned the api middleware group.
+
+                                For most applications, you will begin by defining routes in your routes/web.php file.
+                                The
+                                routes defined in routes/web.php may be accessed by entering the defined route's URL in
+                                your
+                                browser. For example, you may access the following route by navigating to
+                                http://example.com/user in your browser:
+                            </p>
+                        </article>
+                    </section>
+                    <section class="main-section" id="Laravel_Middleware">
+                        <header>
+                            <h2>Laravel Middleware</h2>
+                        </header>
+                        <article class="text-start">
+                            <h5><strong>#</strong>Introduction</h5>
+                            <p>
+                                Middleware provide a convenient mechanism for inspecting and filtering HTTP requests
+                                entering your application. For example, Laravel includes a middleware that verifies the
+                                user
+                                of your application is authenticated. If the user is not authenticated, the middleware
+                                will
+                                redirect the user to your application's login screen. However, if the user is
+                                authenticated,
+                                the middleware will allow the request to proceed further into the application.
+                                <code>
+                                    php artisan make:middleware EnsureTokenIsValid
+                                </code>
+                                Additional middleware can be written to perform a variety of tasks besides
+                                authentication.
+                                For example, a logging middleware might log all incoming requests to your application.
+                                There
+                                are several middleware included in the Laravel framework, including middleware for
+                                authentication and CSRF protection. All of these middleware are located in the
+                                app/Http/Middleware directory.
+                            </p>
+                            <code>
+                                    namespace App\Http\Middleware;
+                                    use Closure;
+                                    class EnsureTokenIsValid
+                                    {
+                                        /**
+                                        * Handle an incoming request.
+                                        *
+                                        * @param  \Illuminate\Http\Request  $request
+                                        * @param  \Closure  $next
+                                        * @return mixed
+                                        */
+                                        public function handle($request, Closure $next)
+                                        {
+                                            if ($request->input('token') !== 'my-secret-token') {
+                                                return redirect('home');
+                                            }
+
+                                            return $next($request);
+                                        }
+                                    }
+                            </code>
+                        </article>
+                    </section>
+                    <section class="main-section" id="Laravel_Controllers">
+                        <header>
+                            <h2>Laravel Controllers</h2>
+                        </header>
+                        <article class="text-start">
+                            <h5><strong>#</strong>Introduction</h5>
+                            <p>
+                                Instead of defining all of your request handling logic as closures in your route files,
+                                you may wish to organize this behavior using "controller" classes. Controllers can group
+                                related request handling logic into a single class. For example, a UserController class
+                                might handle all incoming requests related to users, including showing, creating,
+                                updating, and deleting users. By default, controllers are stored in the
+                                app/Http/Controllers directory.
+                                Let's take a look at an example of a basic controller. Note that the controller extends the base controller class included with Laravel:
+                            </p>
+                            <code>
+                                App\Http\Controllers\Controller:
+                            </code>
+                            <code>
+                                namespace App\Http\Controllers;
+
+                                    use App\Http\Controllers\Controller;
+                                    use App\Models\User;
+
+                                    class UserController extends Controller
+                                    {
+                                        /**
+                                        * Show the profile for a given user.
+                                        *
+                                        * @param  int  $id
+                                        * @return \Illuminate\View\View
+                                        */
+                                        public function show($id)
+                                        {
+                                            return view('user.profile', [
+                                                'user' => User::findOrFail($id)
+                                            ]);
+                                        }
+                                    }
+                            </code>
+                        </article>
+                    </section>
+                    <section class="main-section" id="Blade_Component">
+                        <header>
+                            <h2>Blade Component</h2>
+                        </header>
+                        <article class="text-start">
+                            <h5><strong>#</strong>Introduction</h5>
+                            <p>
+                                Middleware provide a convenient mechanism for inspecting and filtering HTTP requests
+                                entering your application. For example, Laravel includes a middleware that verifies the
+                                user
+                                of your application is authenticated. If the user is not authenticated, the middleware
+                                will
+                                redirect the user to your application's login screen. However, if the user is
+                                authenticated,
+                                the middleware will allow the request to proceed further into the application.
+
+                                Additional middleware can be written to perform a variety of tasks besides
+                                authentication.
+                                For example, a logging middleware might log all incoming requests to your application.
+                                There
+                                are several middleware included in the Laravel framework, including middleware for
+                                authentication and CSRF protection. All of these middleware are located in the
+                                app/Http/Middleware directory.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="main-section" id="Views">
+                        <header>
+                            <h2>Views</h2>
+                        </header>
+                        <article class="text-start">
+                            <h5><strong>#</strong>Introduction</h5>
+                            <p>
+                                Middleware provide a convenient mechanism for inspecting and filtering HTTP requests
+                                entering your application. For example, Laravel includes a middleware that verifies the
+                                user
+                                of your application is authenticated. If the user is not authenticated, the middleware
+                                will
+                                redirect the user to your application's login screen. However, if the user is
+                                authenticated,
+                                the middleware will allow the request to proceed further into the application.
+
+                                Additional middleware can be written to perform a variety of tasks besides
+                                authentication.
+                                For example, a logging middleware might log all incoming requests to your application.
+                                There
+                                are several middleware included in the Laravel framework, including middleware for
+                                authentication and CSRF protection. All of these middleware are located in the
+                                app/Http/Middleware directory.
+                            </p>
+                        </article>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

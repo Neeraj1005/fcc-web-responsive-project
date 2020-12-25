@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product landing page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <style>
+        #nav-bar {
+            background: teal;
+        }
+
+        #header-img {
+            display: block;
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .client {
+            background-color: #eee;
+            background-position: left top;
+            background-repeat: no-repeat;
+            padding-top: 90px;
+            padding-right: 30px;
+            padding-bottom: 90px;
+            padding-left: 30px;
+        }
+
+        p.footer-head-title {
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            color: #fff;
+            padding-bottom: 15px;
+        }
+
+        .footer-main p {
+            text-transform: capitalize !important;
+        }
+
+        .footer-main p a {
+            font-weight: 300 !important;
+            font-size: 12px !important;
+            color: #ccc;
+            text-transform: capitalize;
+        }
+
+        .footer-about p {
+            width: 90%;
+            color: #d8d8d8 !important;
+        }
+
+        .footer-link-tag p a {
+            line-height: 24px;
+        }
+
+        .form-group {
+            margin: 2px;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                width: 1180px;
+            }
+        }
+
+        .menu-position {
+            flex-direction: row !important;
+        }
+
+        #video-bg {
+            background-color: #d7d875;
+            background-position: left top;
+            background-repeat: no-repeat;
+            padding-top: 90px;
+            padding-right: 30px;
+            padding-bottom: 90px;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="">
+        <nav id="nav-bar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img id="header-img" src="https://logo.clearbit.com/baremetrics.com" alt="Tech-x"
+                        class="img-fluid rounded ">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <form id="search-form" class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                        <button id="submit-search" class="btn btn-primary" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav flex-wrap ms-md-auto menu-position">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-clients">Client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#video-play">Video</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://placehold.it/1349x457?text=Slider1" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://placehold.it/1349x457?text=Slider2" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+    <!-- /.container -->
+    <div class="container-fluid client text-center">
+        <div class="container" id="clients">
+            <section id="our-clients">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="mb-4">Our Clients</h2>
+                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://placehold.it/158x105?text=Client1" class="img-fluid thumbnail card" alt="...">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://placehold.it/158x105?text=Client2" class="img-fluid thumbnail card" alt="...">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://placehold.it/158x105?text=Client3" class="img-fluid thumbnail card" alt="...">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://placehold.it/158x105?text=Client4" class="img-fluid thumbnail card" alt="...">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://placehold.it/158x105?text=Client5" class="img-fluid thumbnail card" alt="...">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://placehold.it/158x105?text=Client6" class="img-fluid thumbnail card" alt="...">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-center" id="video-bg">
+        <section id="video-play">
+            <iframe id="video" height="315"
+                src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+                frameborder="0" allowfullscreen></iframe>
+        </section>
+    </div>
+    <div class="container mt-5">
+        <section id="contact-us">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="mb-4" id="contact-us">Contact Us</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">Submit Form</h2>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full name" class="form-control" id="name"
+                                aria-describedby="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email address" name="email" class="form-control" id="email"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="mobilenumber" placeholder="Your contact" class="form-control"
+                                id="mobilenumber" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" placeholder="Your message"
+                                id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <input id="submit" type="submit" class="btn btn-primary btn-sm float-end"></input>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer bg-dark footer-main pt-5 pb-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-about" id="about">
+                    <p class="footer-head-title">ABOUT US</p>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout.
+                        The point of using Lorem Ipsum is that it has.
+                    </p>
+                </div>
+                <div class="col-md-3 footer-link-tag">
+                    <p class="footer-head-title">Title1</p>
+                    <p><a href="#">Job Board Software</a></p>
+                    <p><a href="#">Applicant Tracking Software</a></p>
+                    <p><a href="#">Recruitment Software</a></p>
+                    <p><a href="#">CV Bank</a></p>
+                    <p><a href="#">Reverse Job Board</a></p>
+                    <p><a href="#"> Software</a></p>
+                </div>
+                <div class="col-md-3 footer-link-tag">
+                    <p class="footer-head-title">Title2</p>
+                    <p><a href="#">Job Board Software</a></p>
+                    <p><a href="#">Applicant Tracking Software</a></p>
+                    <p><a href="#">Recruitment Software</a></p>
+                    <p><a href="#">CV Bank</a></p>
+                    <p><a href="#">Reverse Job Board</a></p>
+                    <p><a href="#"> Software</a></p>
+                </div>
+                <div class="col-md-3 footer-link-tag">
+                    <p class="footer-head-title">Title3</p>
+                    <p><a href="#">Job Board Software</a></p>
+                    <p><a href="#">Applicant Tracking Software</a></p>
+                    <p><a href="#">Recruitment Software</a></p>
+                    <p><a href="#">CV Bank</a></p>
+                    <p><a href="#">Reverse Job Board</a></p>
+                    <p><a href="#"> Software</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
